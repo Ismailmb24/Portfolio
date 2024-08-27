@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+        <title>MBT-Art</title>
+        <link href="img/icon.png" rel="icon" />
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
+        <link rel="stylesheet" type="text/css" href="css folder/nav.css" />
+        <link rel="stylesheet" type="text/css" href="css folder/footer.css" />
+        <link rel="stylesheet" type="text/css" href="css folder/modal.css" />
+        <link rel="stylesheet" type="text/css" href="css folder/photo-viewer.css" />
+        <link rel="stylesheet" type="text/css" href="css folder/art.css" />
+    </head>
+    <body>
+        <header>
+            <img src="img/logo 2.png" alt="logo image" id="logo" />
+            <nav id="nav-1">
+                <ul id="nav-list">
+                    <li> <a href="index.html" class="nav-link"> <span class="t-nav">Home</span> </a> </li>
+                    <li> <a href="development.html" class="nav-link"> <span class="t-nav">Development</span> </a> </li>
+                    <li> <a href="#" class="nav-link active"> <span class="t-nav">Art</span> </a> </li>
+                    <li> <a href="about.html" class="nav-link"> <span class="t-nav">About</span> </a> </li>
+                </ul>
+                <div id="m-n-s-wrapper"> <i class="fa-solid fa-bars" id="m-n-shower"></i> </div>
+            </nav>   
+        </header>
+        
+        <!-- ----------------- navigators for small screen ------------------- -->
+        <nav id="nav-2">
+            <div id="modal-window" class="close">
+                <div id="m-w-c-wrapper"> <span id="m-w-close">&times;</span> </div>
+                <ul id="m-nav-list">
+                    <li> <a href="index.html" class="nav-link" > <span class="t-nav">Home</span> </a> </li>
+                    <li> <a href="development.html" class="nav-link"> <span class="t-nav">Development</span> </a> </li>
+                    <li> <a href="#" class="nav-link active"> <span class="t-nav">Art</span> </a> </li>
+                    <li> <a href="about.html" class="nav-link"> <span class="t-nav">About</span> </a> </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- -------------- showcasing secction ----------------- -->
+        <section id="shwc">
+            <secction id="s-content">
+                <section id="s-image-wraper">
+                    <img src="img/drawing.png" alt="showcase image" id="s-image" />
+                </section>
+            
+                <article id="s-desc">
+                    <h1 id="s-d-head">Nice to view <span class="green-txt">MBT's</span>  art gallery</h1>
+                    <p>
+                        MBT's art gallery contains Isma'il Hassan's art projects series image,
+                         wish you wonder how they looks.
+                    </p>
+                    <a href="#" id="s-g-shower">View Gallery</a>
+                </article>
+            </secction>
+        </section> 
+        
+    <!-- ----------------------- favorite topics section ----------------- -->
+    <section id="d-c-wraper">
+        <section class="d-category">
+            <section class="d-c-imgs" id="d-c-imgs1">
+                <img src="img/drawing/drawing 7.jpg" alt="car drawing image" />
+                <img src="img/drawing/drawing 11.jpg" alt="car drawing image" />
+                <img src="img/drawing/drawing 12.jpg" alt="car drawing image" />
+                <img src="img/drawing/drawing 13.jpg" alt="car drawing image" />
+            </section>
+            <section class="d-c-atl">
+                <h1>Nice looking car drawing</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, 
+                    fugit eaque ipsa, at pariatur labore dicta numquam enim dolor iure illum? 
+                    Voluptates aut alias laborum earum in consectetur blanditiis expedita!
+                </p>
+                <div class="d-c-link-wrap"><a href="#" class="d-c-link">view more</a></div>
+            </section>
+        </section>
+        <section class="d-category">
+            <section class="d-c-imgs" id="d-c-imgs2">
+                <img src="img/drawing/drawing 15(2).jpg" alt="drawing of part of animals' body" />
+                <img src="img/drawing/drawing 20.jpg" alt="drawing of part of animals' body" />
+            </section>
+            <section class="d-c-atl">
+                <h1>Drawing of part of animals' body</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, 
+                    fugit eaque ipsa, at pariatur labore dicta numquam enim dolor iure illum? 
+                    Voluptates aut alias laborum earum in consectetur blanditiis expedita!
+                </p>
+                <div class="d-c-link-wrap"><a href="#" class="d-c-link">view more</a></div>
+            </section>
+        </section>
+        <section class="d-category">
+            <section class="d-c-imgs" id="d-c-imgs3">
+                <img src="img/drawing/drawing 9(2).jpg" alt="nature drawing image">
+            </section>
+            <section class="d-c-atl">
+                <h1>Wonderful nature drawing</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, fugit eaque ipsa, 
+                    at pariatur labore dicta numquam enim dolor iure illum? 
+                    Voluptates aut alias laborum earum in consectetur blanditiis expedita!</p>
+                <div class="d-c-link-wrap"><a href="#" class="d-c-link">view more</a></div>
+            </section>
+        </section>
+    </section>
+    <!-- -------------------- photo viewer section -------------------- -->
+    <section id="gallery">
+        <h1 id="g-head">Gallery</h1>
+        <section id="g-content">
+            <setion id="g-header">
+                <div id="left" class="photo-movers"><i class="fa-less-than"></i></div>
+                <div id="g-photo-viewer"></div>
+                <div id="right" class="photo-movers"><i class="fa-greater-than"></i></div>
+            </setion>
+            <div id="thumbnail">
+                <section class="column">
+                    <img src="img/drawing/drawing 15.jpg" alt="column1 drawing1 image" class="thumbs" />
+                    <img src="img/drawing/drawing 1.jpg" alt="column1 drawing2 image"  class="thumbs" />
+                    <img src="img/drawing/drawing 2.jpg" alt="column1 drawing3 image"  class="thumbs" />
+                    <img src="img/drawing/drawing 3.jpg" alt="column1 drawing4 image"  class="thumbs" />
+                    <img src="img/drawing/drawing 4.jpg" alt="column1 drawing5 image"  class="thumbs" />
+                    <img src="img/drawing/drawing 8.jpg" alt="column1 drawing5 image"  class="thumbs" />
+                </section>
+
+                <section class="column">
+                    <img src="img/drawing/drawing 5.jpg" alt="column2 drawing1 image"  class="thumbs" />
+                    <img src="img/drawing/drawing 7.jpg" alt="column2 drawing2 image"  class="thumbs" />
+                    <img src="img/drawing/drawing 18.jpg" alt="column2 drawing3 image"  class="thumbs" />
+                    <img src="img/drawing/drawing 9.jpg" alt="column2 drawing4 image"  class="thumbs" />
+                    <img src="img/drawing/drawing 10.jpg" alt="column2 drawing5 image" class="thumbs" />
+                    <img src="img/drawing/drawing 14.jpg" alt="column1 drawing5 image"  class="thumbs" />
+                </section>
+
+                <section class="column">
+                    <img src="img/drawing/drawing 11.jpg" alt="column3 drawing1 image" class="thumbs" />
+                    <img src="img/drawing/drawing 12.jpg" alt="column3 drawing2 image" class="thumbs" />
+                    <img src="img/drawing/drawing 13.jpg" alt="column3 drawing3 image" class="thumbs" />
+                    <img src="img/drawing/drawing 19.jpg" alt="column3 drawing4 image" class="thumbs" />
+                    <img src="img/drawing/drawing 16.jpg" alt="column1 drawing5 image"  class="thumbs" />
+                </section>
+            </div>
+        </section>
+    </section>
+
+        <!-- ------------------ footer of the page ---------------- -->
+        <footer>
+            <p id="bt-p"><a href="#shwc" id="back-top">back to  top </a></p> 
+            <table id="foot-table">
+                <tr>
+                    <th>language</th>
+                    <th>part of site</th>
+                    <th>sections of page</th>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td><a href="index.html" class="foot-link">Home</a> </td>
+                    <td> Development </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <a href="development.html" class="foot-link">Development</a> </td>
+                    <td> Drawings </td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <a href="#" class="foot-link">Drawings</a> </td>
+                    <td> Porpular Blogs </td>
+                
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <a href="about.html" class="foot-link">About</a> </td>
+                    <td>contact me</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <a href="blogs.html" class="foot-link">Blogs</a> </td>
+                    <td></td>
+                </tr>
+            </table>
+            <div id="copyright">&copy; copyright <span id="cr-years" ></span></div>
+        </footer>  
+
+        <script src="js folder/jquery-3.6.2.js"></script>
+        <script src="js folder/modal.js"></script>
+        <script src="js folder/photo viewer.js"></script>
+        <script src="js folder/mobile nav.js"> </script>
+        <script src="js folder/art.js"></script>
+       
+    </body>
+</html>

@@ -1,0 +1,173 @@
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: arial, verdana, sans-serif;
+}
+
+/* ---------- divider line animation ---------- */
+    @keyframes divider {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+
+#bw-shwc {
+    margin: 20px 10px;
+}
+
+#bw-s-head {
+    width: 95%;
+    font-size: 40px;
+}
+
+#mbt {
+    color: green;
+}
+
+#divider {
+    margin: 0 auto;
+    border-top: 3px solid green;
+    animation: divider 1s 1 linear;
+}
+
+#bw-ref {
+    text-align: center;
+}
+
+#bw-r-amount {
+    width: 80%;
+    margin: 10%;
+}
+
+.r-no{
+    font-size:150px;
+    color: green;
+}
+
+.r-title {
+    font-size: 25px;
+}
+
+/* --------------------- blog postsection --------------------------- */
+
+.s-head{
+    padding:15px;
+}
+
+.b-atl figure{
+    width: 90%;
+    margin:20px auto;
+    padding-bottom:20px;
+}
+
+.b-a-img{
+    width:100%;
+}
+
+.b-link{
+    text-decoration:none;
+    color:green;
+    padding:5px;
+}
+
+/* -------------------- responsive of tablet ----------------------- */
+@media only screen and (min-width:760px){
+
+/* ---------- divider line animation ---------- */
+    @keyframes divider {
+        from{
+            height: 0px;
+        }
+        to{
+            height: 200px;
+        }
+    }
+    
+/* ------------------- showcasing section ---------------------------- */
+    #bw-shwc {
+        display: grid;
+        grid-template-columns:60% 5% 35%; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #bw-s-head {
+        font-size: 50px;
+        margin: 50px 0px;
+    }
+    
+    #divider {
+        height: 200px;
+        border-left: 3px solid green;
+        animation: divider 1s 1 linear;
+    }
+    
+    
+/* ------------------- blog post section style ----------------------- */
+    .s-head{
+        font-size:40px;
+    }
+    
+     #b-post{
+        overflow: auto;
+    }
+    
+    .b-atl{
+        width:32%;
+        float:left;
+        margin:10px 0.5% 0px 0.5%;
+    }
+    
+    .b-atl figcaption {
+        overflow: hidden;
+    }
+    
+}
+
+/* ------------------ responsive design of system ---------------------- */
+@media only screen and (min-width:980px){
+/* ---------------- showcasing section -------------------- */
+   #bw-shwc {
+        grid-template-columns: 65% 5% 30%;
+    }
+    
+    #bw-s-head {
+        font-size: 75px;
+    }
+    
+    #divider {
+        height: 250px;
+    }
+    
+    #bw-ref {
+        margin-top: 35px;
+    }
+  
+/* ------------------ blog refference section ------------------ */
+     .r-no{
+            font-size:250px;
+            margin:10px;
+        }
+    
+    .r-title{
+        margin:90px;
+        font-size:20px;
+    }
+    
+/* ------------------ blog post section ---------------------- */
+    .b-atl figcaption{
+        padding:10px;
+    }
+    
+}

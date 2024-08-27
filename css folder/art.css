@@ -1,0 +1,233 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: arial, verdana, sans-serif;
+}
+
+.s-head{
+  font-size: 30px;
+}
+
+.green-txt{
+  color: green;
+}
+
+/* ------------------ showcasing section ------------------------ */
+
+
+#shwc{
+  position: relative;
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+#s-image{
+  width: 100%;
+}
+
+#s-desc{
+  padding: 10px;
+}
+
+#s-desc h1{
+  font-size: 35px;
+  margin: 0;
+}
+
+#s-g-shower{
+  color: black;
+  padding: 5px 10px;
+  margin: 10px 0;
+  text-decoration: none;
+  border: 2px solid green;
+  border-radius: 20px;
+}
+
+/* ------------------drawing category section ------------------- */
+.d-category{
+  display: flex;
+  flex-direction: column;
+  margin: 70px 0;
+  padding: 10px;
+}
+
+.d-c-imgs{
+  padding: 0px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.d-c-imgs img{
+  width: 100%;
+  padding: 0
+}
+
+.d-c-atl{
+  padding: 10px;
+}
+
+.d-c-atl h1{
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.d-c-link{
+  color: black;
+  text-decoration: none;
+  border: 2px solid green;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 30px 0;
+}
+
+/* ---------------- first drawing category style ----------------- */
+#d-c-imgs1 img{
+  width: 49%;
+}
+
+#d-c-imgs1 img:nth-child(1){
+  border-top-left-radius: 10px;
+}
+
+#d-c-imgs1 img:nth-child(2){
+  border-top-right-radius: 10px;
+}
+
+#d-c-imgs1 img:nth-child(3){
+  border-bottom-left-radius: 10px;
+}
+
+#d-c-imgs1 img:nth-child(4){
+  border-bottom-right-radius: 10px;
+}
+
+/* ----------------- second drawing category style ----------------- */
+#d-c-imgs2 img{
+  width: 49%;
+}
+
+#d-c-imgs2 img:nth-child(1){
+  border-top-left-radius: 10px ;
+  border-bottom-left-radius: 10px;
+}
+
+#d-c-imgs2 img:nth-child(2){
+  border-top-right-radius: 10px ;
+  border-bottom-right-radius: 10px;
+}
+
+/* ------------------ third drawing category style --------------- */
+#d-c-imgs3 img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ------------------- responsive design of tablet ------------------ */
+@media only screen and (min-width:768px){
+  .s-head{
+    font-size: 40px
+  }
+  
+  /*  --------------------- showcasing section ----------------  */
+  #shwc{
+    margin: 70px 0 -1px 0;
+    
+  }
+  
+  #s-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  #s-desc h1{
+    font-size: 50px;
+  }
+   
+  #s-desc p{
+    margin-bottom: 30px;
+  }
+  
+  #s-g-shower:hover{
+    background: green;
+    color: white;
+  }
+  
+  /* -------------------- drawing category section ---------------------- */
+  .d-category{
+    flex-direction: row;
+    margin: 10px 0;
+  }
+  
+  .d-category:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  
+  .d-c-imgs{
+    flex: 100%;
+    margin: 0 10px;
+  }
+  
+  .d-c-atl{
+    flex: 100%;
+    padding: 20px;
+  }
+  
+  .d-c-link-wrap{
+    margin: 20px 0;
+  }
+  
+  .d-c-atl h1{
+    font-size: 30px;
+    margin: 0;
+  }
+}
+
+/* ---------------- responsive design of tablet large and lap top ------------------- */
+@media only screen and (min-width:980px){
+/* --------------------- showcsing section ---------------  */
+  #s-image-wraper{
+    flex: 90%;
+  }
+  
+  #s-desc h1{
+    font-size: 65px;
+  }
+  
+  #s-desc p{
+    font-size: 20px;
+  }
+  
+ /* ----------------------- drawing category section ----------------------- */
+  .d-c-atl h1{
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .d-category{
+    width: 1300px;
+    margin: 20px auto;
+  }
+  
+  .d-c-atl h1{
+    font-size: 60px;
+  }
+  
+  .d-c-atl p{
+    font-size: 25px;
+  }
+  
+  .d-c-link{
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+}

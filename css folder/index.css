@@ -1,0 +1,436 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.green-txt{
+    color: green;
+}
+
+
+/* ----------showcasing area this where the style of explanation of mbt goes--------- */
+#showcase{
+    margin:20px 15px;
+}
+
+#mbt-desc{
+   width: 85%;     
+}
+
+#md-head{
+    font-size:40px;
+}
+
+
+#md-c-link{
+    text-decoration: none;
+    color: black;
+    border:2px solid green;
+    border-radius:20px;
+    padding:7px 10px;
+    transition:all linear 0.2s;
+    z-index: 10;
+}
+
+#s-svg{
+    width: 100%;
+    height: 250px;
+    margin: 25px 0px;
+}
+
+/* ----------------- desction style -------------------------- */
+
+.description{
+    padding: 0px 10px 10px; 
+    text-align: center;
+}
+
+#d-head {
+    font-size: 25px;
+}
+
+.icon-2{
+    padding-right:10px;
+    color:green;
+}
+
+/* --------------- portfolio head sytle -------------------  */
+.p-head{
+    font-family: 'poppins', Verdana, sans-serif;
+}
+
+
+/* --------------- development section style ---------------------- */
+#web-dev{
+    padding:10px;
+}
+ 
+/* ------------------ development section grid----------------------- */
+.wd-grid figure{
+    width:;
+    margin:20px auto;
+    border-radius:10px;
+    box-shadow:0px 0px 10px 0px black;
+    padding-bottom:20px;
+    background-color: white;
+}
+
+.wd-grid figcaption{
+    padding:0px 5px;
+    height:40px;
+    margin-bottom: 15px;
+}
+
+.wdg-image{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.wdg-cap{
+    width:95%;
+    margin:5px 2px;
+}
+
+.wd-link{
+    font-size:20px;
+    padding:0px 20px;
+    margin:10px;
+    text-decoration:none;
+    color:black;
+    border:2px solid green;
+    border-radius:15px;
+}
+
+.icon-3{
+    padding-left:10px;
+    color:green;
+}
+
+/* ------------------- style of drawing section ---------------- */
+#drawings{
+    padding:50px 0px 40px;
+    overflow: auto;
+    margin:0;
+    clear: both;
+    background-color:rgb(244,245,247) ; 
+}
+
+#d-w-desc {
+    text-align: center;
+}
+
+#d-w-desc h1{
+    margin: 0;
+}
+
+#d-w-desc p{
+    width: 70%;
+    margin: 10px auto;
+}
+
+#d-w-vm{
+    width: 30%;
+    margin: 30px auto 0px auto;
+    text-align: center;
+}
+
+#d-w-vm a{
+    color: black;
+    text-decoration: none;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+#d-w-main{
+    display: none;
+}
+
+extra-1{grid-area:main;}
+    .extra-2{grid-area:sub1;}
+    .extra-3{grid-area:sub2;}
+    .extra-4{grid-area:sub3;}
+    .extra-5{grid-area:sub4;}
+     
+#d-w-extra{
+    display:grid;
+    grid-gap: 5px 5px;
+    grid-template-areas: 'main sub1'
+        'sub2 sub4'
+        'sub3 sub4';
+    padding:10px;
+}
+
+.extra-img{
+    width:98%;
+
+}
+
+/* ----------------- popular blogs------------------------------------- */
+.pb-atl figure{
+    width: 90%;
+    margin:20px auto;
+    padding-bottom:20px;
+}
+
+figcapion{
+    margin:0;
+}
+
+.pb-link{
+    text-decoration:none;
+    color:green;
+}
+
+.p-b-p-img{
+    width:100%;
+}
+
+/* -------------------- contact section ------------------------- */
+#contact{
+    padding:20px;
+    margin:0px;
+    overflow:auto;
+    background:white url("../img/contact 5.jpg") no-repeat  fixed;
+    background-size:cover;
+}
+
+#em-link{
+    text-decoration: none;
+    color:black;
+}
+
+.icon{
+    margin:5px 10px;
+    color:green;
+}
+
+.form{
+    margin:5px;
+    border-radius:4px;
+    border:2px solid rgb(243,243,243);
+    width:200px;
+    height:30px;
+    background-color: inherit;
+    outline: none;
+}
+
+#submit{
+    width:90px;
+    height:30px;
+    background-color:green;
+    border-radius: 20px;
+    border:3px solid green;
+    margin: 10px;
+    color:white;
+}
+
+#m-field{
+    width:300px;
+    height:100px;
+    border:1px solid gray;
+}
+
+#em-field, #n-field{
+    width:300px;
+     border:1px solid gray;
+}
+
+/* --------- responsive design of table -------------------------- */
+@media only screen and (min-width:768px){
+    .p-head{
+        font-size: 40px;
+    }
+    
+    /* ------------- style of showcasing section ----------------------- */
+    #showcase {
+        display: flex;
+        margin-bottom: 80px;
+        align-items: center;
+    }
+    
+    #mbt-desc {
+        flex-basis: 45%;
+    }
+    
+    #s-svg {
+        flex-basis: 45%;
+        margin: 40px 0px;
+    }
+    
+    /* ------------- article of description style--------------- */
+    .description{
+        width:70%;
+        margin:0 auto;
+        text-align: center;
+    }
+    
+    #d-head {
+        font-size: 30px;
+        margin: 0;
+    }
+    
+    .description p{
+         font-size:15px;
+    }
+    
+    .icon-2{
+        font-size:25px;
+        margin:5px 10px;
+    }
+   
+    
+    /* ---------------- development section style---------------- */
+    #wd-article-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+   
+    .wd-grid{
+       flex-basis: 31%;
+    }
+    
+    /* ------------------ drawing secton -------------------------- */
+    #d-w-main{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 5px;
+        margin: 70px 20px;
+        align-items: center;
+    }
+    
+    .d-w-images{
+        width: 100%;
+    }
+    
+    #d-w-extra{
+        display: none;
+    }
+
+    /* -------------------- popular blogs -------------------------  */
+    #p-blogs{
+        overflow: auto;
+    }
+    
+    .pb-atl{
+        width:31%;
+        float:left;
+        margin:10px 0.5% 60px 0.5%;
+    }
+    
+/* -------------- contact section -------------------- */
+    #m-field{
+        width:400px;
+        height:100px;
+        outline: none;
+        resize: none;
+    }
+
+    #em-field, #n-field{
+        width:400px;
+        outline: none;
+    }
+}
+
+/* ------------- responsive design of desck top website----------------- */
+@media only screen and (min-width:980px){
+    /*------------- portfolio head style---------      */
+    .p-head{
+        font-size:50px;
+    }
+        /* ------------- showcasing area style -----------------*/
+    #showcase{
+        justify-content: space-between;
+        margin: 50px 0px;
+    }
+
+    #mbt-desc{
+       width: 50%;
+       margin: 25px;
+    }
+
+    #md-head {
+        font-size: 60px;
+        margin: 0px;
+    }
+    
+    #md-c-l-wrapper {
+        margin: 50px 0px;
+    }
+
+    #md-c-link {
+        padding:7px 25px;
+        border-radius:20px;
+        margin-left:10px;
+        transition: all 0.5s;
+    }
+    
+    #s-svg {
+        height: 350px;
+        margin: 150px 0px;
+    }
+
+    /* ---------- descriptio style ---------- */
+    #desc{
+        padding:50px 10px;
+    }
+
+    .description p{
+        font-size:20px
+    }  
+    
+    #d-head {
+        font-size: 40px;
+    }
+    
+    /*---------------- web development grid --------------  */
+    
+   /*------------ drawing description list style -----------------      */
+    #d-w-main{
+        width: 60%;
+        margin: 100px auto;
+    }
+
+/* ------------------------- contact section ---------------------------- */
+     #contact{ 
+         background:white url("../img/contact 4.jpg") no-repeat  fixed; 
+         background-size:cover;
+     }  
+    
+    #c-medias, #c-form{
+        margin:20px 50px;
+    }
+    
+    .form{
+        width:350px;
+    }
+    
+    #m-field, #em-field, #n-field{
+        width:500px;
+    }
+    
+    #submit{
+        width:150px;
+        height:35px;
+    }
+    
+}
+
+@media only screen and (min-width:1150px){
+    #md-head{
+        font-size: 75px;
+    }
+}
+
+
+

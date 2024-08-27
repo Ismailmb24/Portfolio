@@ -1,0 +1,237 @@
+* {
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: arial,verderna,sans-serif; 
+    
+}
+
+ /* ---------- divider line animation ---------- */
+    @keyframes divider {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+
+/* ------------------- development work refference section --------------------- */
+#dw-shwc{
+    margin:20px 10px;
+}
+
+#dw-s-head{
+    width: 95%;
+    font-size: 40px;
+}
+
+#mbt {
+    color: green;
+}
+
+#divider {
+    margin: 0 auto;
+    border-top: 3px solid green;
+    animation: divider 1s 1 linear;
+}
+
+#dw-ref {
+    text-align: center;
+}
+
+#dw-r-amount{
+    width:80%;
+    margin:10%;
+}
+
+.r-no{
+    font-size:150px;
+    color: green;
+}
+
+.r-title {
+    font-size: 25px;
+}
+
+/* --------------------- blog postsection --------------------------- */
+
+.s-head{
+    padding:15px;
+}
+
+/* ---------------- development work section ------------------------------ */
+#web-dev{
+    padding:10px;
+}
+ 
+/* ------------------ development section grid----------------------- */
+.d-atl figure{
+    width:95%;
+    margin:20px auto;
+    border-radius:10px;
+    box-shadow:0px 0px 10px 0px black;
+    padding-bottom:10px;
+}
+
+.d-atl figcaption{
+    padding:5px;
+    height:40px;
+    margin-bottom: 20px;
+}
+
+.d-a-image{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.d-a-cap{
+    width:95%;
+    margin:5px 2px;
+}
+
+.d-a-links{
+    font-size:20px;
+    padding:0px 20px;
+    margin:10px;
+    text-decoration:none;
+    color:black;
+    border:2px solid green;
+    border-radius:15px;
+}
+
+.icon-3{
+    padding-left:10px;
+    color:green;
+}
+
+/* ------------------ responsive design of tablet ------------------- */
+@media only screen and (min-width:768px){
+   /* ---------- divider line animation ---------- */
+    @keyframes divider {
+        from{
+            height: 0px;
+        }
+        to{
+            height: 200px;
+        }
+    }
+    
+    /* ------------------- blog post refference ---------------------------- */
+    #dw-shwc {
+        display: grid;
+        grid-template-columns: 60% 5% 35%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #dw-s-head{
+        font-size: 50px;
+        margin: 50px 0px;
+    }
+    
+    #divider {
+        height: 200px;
+        border-left: 3px solid green;
+        animation: divider 1s 1 linear;
+    }
+    
+    #dw-ref {
+        text-align: left;
+        margin: 30px 0px 0px 30px;
+    }
+   
+    #dw-r-amount {
+        margin: 0px;
+    }
+    
+    .r-title{
+        font-size:20px;
+    }
+    
+    .r-no{
+        font-size:170px;
+        
+    }
+    
+    /* ----------------- blogs description section --------------------- */
+    #d-d-head{
+        font-size:40px;
+    }
+
+    #d-d-pgh{
+        width:75%;
+        padding:0px 10px;
+        margin:0 auto;
+    }
+    
+    /* ---------------- section head ----------------- */
+    .s-head{
+        font-size:40px;
+    }
+    
+    /* ---------------- development section style---------------- */
+    
+    #d-works{
+        overflow: auto;
+    }
+    
+    .d-atl figure{
+        width:31%;
+        float:left;
+        margin:10px 1% 60px 1%;        
+       
+    }
+}
+
+/* ---------------- responsive design of tablet large ------------------- */
+@media only screen and (min-width:980px){
+     /* ---------- divider line animation ---------- */
+    @keyframes divider {
+        from{
+            height: 0px;
+        }
+        to{
+            height: 250px;
+        }
+    }
+    
+    /* --------------- showcase section style -------------- */
+    #dw-shwc {
+        margin: 50px 0px;
+        grid-template-columns: 65% 5% 30%;
+    }
+    
+    #dw-s-head {
+        font-size: 70px;
+        margin: 0px;
+    }
+    
+    #divider {
+        height: 250px;
+        animation: divider 1s 1 linear;
+    }
+    
+    /* ------------------ blog refference section ------------------ */
+     .r-no{
+            font-size:200px;
+        }
+    
+    .r-title{
+        font-size:30px;
+    }
+    
+      /* ----------------- blogs description section --------------------- */
+
+    #d-d-pgh{
+        width:65%;
+    }
+}

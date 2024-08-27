@@ -1,0 +1,139 @@
+@keyframes fade {
+    from{
+        opacity: 0.9;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+/* --------------- modal window content ----------------------- */
+#gallery {
+  display: none;
+  overflow: hidden;
+}
+
+#gallery.active {
+  display: block;
+}
+
+#g-head {
+  margin: 0;
+}
+
+#g-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto 10px auto;
+}
+
+#g-photo-viewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  width: 250px;
+}
+
+#g-photo-viewer img {
+    width: 200px;
+}
+
+.photo-movers {
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  font-size: 40px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#m-w-head {
+  margin:10px 5px;
+}
+
+
+#thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+  width:90%;
+  margin:10px auto;
+  max-height: 150px;
+  overflow: scroll;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.column {
+  flex: 30%;
+  max-width: 50%;
+  padding: 5px;
+}
+
+.thumbs {
+  width: 100%;
+  cursor: pointer;
+}
+
+.thumbs.active {
+  opacity: 0.4;
+}
+
+/* ------------------------ responsive design of tablet ------------------------ */
+@media only screen and (min-width: 768px) {
+  #g-head {
+    font-size: 40px;
+    margin: 0 10px;
+  }
+  
+  #g-photo-viewer {
+    width: 450px;
+    height: 450px; 
+  }
+  
+  #g-photo-viewer img{
+    width: 300px;
+  }
+  
+  #thumbnail {
+    max-height: 300px;
+  }
+}
+
+/* ------------------------ responsive design of mini lap top ---------------------- */
+@media only screen and (min-width: 980px) {
+  #g-head {
+    font-size: 50px;
+  }
+  
+  #g-content {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+  }
+  
+  #g-header {
+    
+  }
+  
+  #g-photo-viewer {
+    width: 70%;
+  }
+  
+  #g-photo-viewer img {
+    width: 80%;
+  }
+  
+  #thumbnail {
+    flex: 120%;
+    max-height: 450px; 
+  }
+}
